@@ -1,0 +1,17 @@
+'log_directory': 'test_log'
+'module': 'models.gnmt.gpus=1'
+'data_dir': '/home/yons/wmt16_de_en'
+'config_file': 'models/gnmt/gpus=1/mp_conf.json'
+'container': 'fiddlev3.azurecr.io/pipedream:1905'
+'machines': ['v401:0']
+'batch_size': 64
+'learning_rate': 0.0003
+'weight_decay': 0.000
+'epochs': 10
+'print_frequency': 100
+'verbose_frequency': 100
+'compress_activations': False
+'compress_in_gpu': False
+'learning_rate_policy': 'polynomial'
+'model_type': 'translation'
+'distributed_backend': 'gloo'
